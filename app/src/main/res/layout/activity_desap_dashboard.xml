@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/corFundo"
+    tools:context=".dashboard.DesapDashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Desaparecidos"
+            android:textAllCaps="false"
+            android:textColor="#769053"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:fontFamily="sans-serif"
+            android:layout_gravity="center"/>
+
+       <TableRow
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center"
+           android:layout_marginTop="20dp"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           >
+
+           <ImageButton
+               android:id="@+id/ImgCadastrarDesap"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_gravity="left"
+               android:layout_marginTop="15dp"
+
+               android:src="@drawable/ic_image_black_24dp"/>
+
+           <EditText
+               android:id="@+id/editTextNomeDesap"
+               android:layout_width="200dp"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="50dp"
+               android:layout_marginLeft="5dp"
+               android:textAlignment="center"
+               android:gravity="center_vertical|center"
+               android:hint="Digite o nome"
+               android:textColorLink="@color/colorPrimary"
+               android:inputType="text"/>
+       </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/ckVacinado"
+                android:text="Vacinado"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:paddingRight="5dp"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/ckPeloLongo"
+                android:text="Pelo Longo"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/ckTosa"
+                android:text="Tosado"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <CheckBox
+                android:id="@+id/ckImperativo"
+                android:text="Agitado"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:text="Amável"
+                android:textStyle="bold"
+                android:paddingRight="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:text="Calmo"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+        </TableRow>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#f2f2f2"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Adicionar Descrição:"
+            android:textAllCaps="false"
+            android:textColor="#769053"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:fontFamily="sans-serif"
+            android:layout_gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/editTextDescDesap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="top|center"
+            android:hint="Digite a descrição aqui..."
+            android:textColorLink="@color/colorPrimary"
+            android:inputType="text"/>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_marginRight="10dp"
+                android:id="@+id/btnCancelarCadastroDesap"
+                android:layout_width="150dp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botao2"
+                android:text="Cancelar"
+                android:textColor="#ffff"
+                />
+            <Button
+                android:id="@+id/btnAddCadastroDesap"
+                android:layout_marginLeft="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/botaotutorialc"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:text="Cadastrar" />
+        </TableRow>
+
+    </LinearLayout>
+
+</ScrollView>

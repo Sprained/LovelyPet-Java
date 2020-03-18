@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerId"
+    android:fitsSystemWindows="true"
+    tools:context=".telas_principais.MainActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearColor"
+
+            android:orientation="vertical"
+            >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary"
+                android:elevation="4dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <com.synnapps.carouselview.CarouselView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:pageColor="#00000000"
+                app:fillColor="#FFFFFFFF"
+                app:slideInterval="5000"
+                app:radius="6dp"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"
+                android:id="@+id/carousel">
+
+            </com.synnapps.carouselview.CarouselView>
+
+
+            <!--            picker comentado
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Adicionados recentemente:"
+                android:textAllCaps="false"
+                android:textColor="#769053"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:fontFamily="sans-serif"
+                tools:text="Adicionados recentemente:" />
+
+            <in.goodiebag.carouselpicker.CarouselPicker
+                android:id="@+id/carouselPicker1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                app:items_visible="three" /> -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adicionados Recentemente"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/muli_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_margin="8dp"
+                        android:elevation="8dp"
+                        android:background="@drawable/btn_recent_add_custom"/>
+
+                </TableRow>
+
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/btn_adocao"
+                android:textAllCaps="false"
+                android:fontFamily="@font/muli_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="@string/btn_adocao"/>
+
+
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:background="@color/corFundoCard"
+                    android:id="@+id/btn_gatos"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                       <ImageButton
+                           android:id="@+id/btn_gatos_secondary"
+                           android:layout_width="80dp"
+                           android:layout_height="80dp"
+                           android:layout_marginTop="8dp"
+                           android:paddingRight="5dp"
+                           android:background="@drawable/btn_custom"
+                           android:src="@mipmap/ic_cats"
+                           android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Gatos"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_dogs"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/btn_dogs_secondary"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_dogs"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Cães"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cuidados"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btn_clinics_secondary"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_clinics"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Clínicas"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/CorViewLinha"/>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_desaparecidos"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btn_desaparecidos_secondary"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_missing"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Perdidos"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_eventos"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btn_eventos_secondary"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_events"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Eventos"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_care"
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/btn_dicas_secondary"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:paddingTop="5dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_care"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Dicas"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+            <!--
+            <com.synnapps.carouselview.CarouselView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:pageColor="#00000000"
+                app:fillColor="#FFFFFFFF"
+                app:slideInterval="5000"
+                app:radius="6dp"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp"
+                android:id="@+id/patrocinadores"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="Outros"
+                android:textAllCaps="false"
+                android:fontFamily="@font/muli_regular"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Outros" />
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_rescue"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:text="Resgate"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_shelter"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Abrigos"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="8dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="4dp"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/card9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/btn_custom"
+                            android:src="@mipmap/ic_cause"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Causa"
+                            android:textColor="@color/corTextoEscuro"
+                            android:fontFamily="@font/muli_regular"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:layout_margin="16dp"/>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+            <ImageView
+                android:id="@+id/banner_doacao_animais"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="-32dp"
+                android:elevation="4dp"
+                android:src="@mipmap/banner_doacao_animais"/>
+
+
+            <!-- Esse TextView sumirá quando forem adicionados as logos dos
+             patrocinadores no lugar dos ícones abaixo-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Parceiros"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_regular"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/CorViewLinha"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:gravity="fill"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/corTextoEscuro"
+                android:text="@string/txt_parceiros"/>
+
+            <HorizontalScrollView
+                android:id="@+id/hScrollId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/linearColor2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="horizontal">
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="4dp"
+                            android:src="@mipmap/lovely"/>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="4dp"
+                            android:src="@mipmap/lovely"/>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="4dp"
+                            android:src="@mipmap/lovely"/>
+
+                    </TableRow>
+
+                    <TableRow android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="4dp"
+                            android:src="@mipmap/lovely"/>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="4dp"
+                            android:src="@mipmap/lovely"/>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="4dp"
+                            android:src="@mipmap/lovely"/>
+                    </TableRow>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/arrastarId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-8dp"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                android:text="Arraste para o lado"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/corTextoEscuro"/>
+
+
+            <ImageView
+                android:id="@+id/banner_doar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="-16dp"
+                android:layout_marginBottom="0dp"
+                android:src="@mipmap/slider3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/txt_copy"
+                android:textAlignment="center"
+                android:fontFamily="@font/roboto_bold"
+                android:textColor="@color/corTextoEscuro"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        app:headerLayout="@layout/header"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@color/branco"
+
+        android:textColor="@color/corTextoEscuro"
+        app:itemTextColor="@color/corTextoEscuro"
+        app:itemIconTint="@color/corTextoEscuro"
+        app:menu="@menu/drawermenu"
+
+        android:layout_gravity="start"
+        android:id="@+id/nav_viewId"
+    >
+</com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

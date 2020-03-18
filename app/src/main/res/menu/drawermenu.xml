@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menusttr">
+
+        <item android:title="Menu"
+            app:itemTextAppearance="@color/corTextoEscuro"
+            android:id="@+id/submenu_menu">
+
+            <menu>
+
+
+                <item
+                    android:id="@+id/profile"
+                    android:title="Perfil"
+                    android:icon="@drawable/ic_profile_menu"/>
+
+                <item
+                    android:id="@+id/tutorial"
+                    android:title="Tutorial"
+                    android:icon="@drawable/ic_tutorial"
+                    />
+
+                <item
+                    android:id="@+id/favoritos"
+                    android:title="Favoritos"
+                    android:icon="@drawable/ic_favoritos"/>
+
+                <item android:id="@+id/loja"
+                    android:title="Loja (Em Breve)"
+                    android:icon="@drawable/ic_store"/>
+
+                <item
+                    android:id="@+id/doacao"
+                    android:title="Doação"
+                    android:icon="@drawable/ic_attach_money_black_24dp"
+                    />
+
+                <item
+                    android:id="@+id/compartilhe"
+                    android:title="Compartilhe"
+                    android:icon="@drawable/ic_share_black_24dp"
+                    />
+
+                <item
+                    android:id="@+id/info"
+                    android:title="Sobre o aplicativo"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
+                    />
+            </menu>
+
+        </item>
+
+        <item android:title="Termos"
+            android:id="@+id/submenu_termos">
+
+            <menu>
+
+                <item
+                    android:id="@+id/termos_uso"
+                    android:title="Termos de Uso"
+                    android:icon="@drawable/ic_assignment_black_24dp"
+                    />
+
+                <item
+                    android:id="@+id/termos_privacidade"
+                    android:title="Termos de Privacidade"
+                    android:icon="@drawable/ic_lock_black_24dp"/>
+
+            </menu>
+
+        </item>
+
+        <item android:title="Outros"
+            android:id="@+id/submenu_outros"
+            >
+
+            <menu>
+
+                <item
+
+                    android:id="@+id/mudarCorClaro"
+                    android:title="Tema Claro"
+                    android:icon="@drawable/ic_lightbulb_outline_24dp"
+                    android:visible="false"/>
+
+
+                <item
+
+                    android:id="@+id/mudarCorEscuro"
+                    android:title="Tema Escuro"
+                    android:icon="@drawable/ic_lightbulb_outline_24dp"
+                    android:visible="true"/>
+
+
+                <item
+                    android:id="@+id/anuncios"
+                    android:title="Anuncie no aplicativo"
+                    android:icon="@drawable/ic_advertise"/>
+
+                <item
+                    android:id="@+id/parceiros"
+                    android:title="Parceiros"
+                    android:icon="@drawable/ic_partner"/>
+
+                <item android:id="@+id/updates"
+                    android:title="Atualizações"
+                    android:icon="@drawable/ic_updates"/>
+
+            </menu>
+
+
+        </item>
+
+        <item android:title="Sair">
+            <menu>
+                <item
+                    android:id="@+id/exit_session"
+                    android:title="Sair da sessão"
+                    android:icon="@drawable/ic_exit_session"/>
+            </menu>
+        </item>
+
+    </group>
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#94be59</color>
+    <color name="colorPrimaryDark">#648e2b</color>
+    <color name="colorAccent">#75a542</color>
+    <color name="branco">#ffffff</color>
+    <color name="cinza">#e2e2e2</color>
+    <color name="dark">#373737</color>
+    <color name="cinzaView">#f2f2f2</color>
+    <color name="btnStore">#6B8F44</color>
+    <color name="corFundo">#363636</color>
+    <color name="corTextoEscuro">#B2B2B2</color>
+    <color name="CorViewLinha">#1AB2B2B2</color>
+    <color name="corFundoCard">#515151</color>
+</resources>

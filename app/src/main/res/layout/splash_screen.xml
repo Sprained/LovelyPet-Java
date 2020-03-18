@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash_screen"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telas_principais.SplashScreen"
+    android:background="@drawable/splash"
+    android:gravity="bottom">
+
+    <!--
+    <com.felipecsl.gifimageview.library.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <ProgressBar
+
+        android:id="@+id/linearBar"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="10dp"
+       android:foregroundGravity="center"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+</LinearLayout>

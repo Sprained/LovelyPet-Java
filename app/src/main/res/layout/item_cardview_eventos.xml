@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp"
+    android:id="@+id/cardLayoutEventos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageEvento"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@mipmap/evento"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Neeko"
+            android:textColor="@color/dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/tituloEvento"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Neeko"
+            android:textColor="@color/dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/subEvento"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Neeko"
+            android:textColor="@color/dark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:id="@+id/locEvento"/>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

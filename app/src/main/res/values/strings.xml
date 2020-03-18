@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Lovely Pet</string>
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
+    <string name="btn_adocao">Menu Principal</string>
+    <string name="btn_local">Ajude alguns locais</string>
+    <string name="txt_ad">Clique e ajude o app a se manter:</string>
+    <string name="txt_copy">Todos os direitos reservados à Equipe BubbleDev 2019</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="how_you_know">Como você conheceu o Lovely Pet?</string>
+    <string name="sexo_masculino">Masculino</string>
+    <string name="txt_sobre">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et turpis in nisi ullamcorper rutrum et in justo. Donec maximus urna eget nulla pellentesque, in efficitur ante convallis. Sed tempor risus metus, eu consequat mi tempor sit amet. Suspendisse ullamcorper vulputate iaculis.</string>
+    <string name="txt_adocao">Não pode ficar com seu gatinho? é uma pena. A boa notícia é que você pode utilizar os campos abaixo para colocá-lo para adoção!</string>
+    <string name="txt_adocao_dog">Não pode ficar com seu cãozinho? é uma pena. A boa notícia é que você pode utilizar os campos abaixo para colocá-lo para adoção!</string>
+    <string name="txt_tips">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id aliquam nibh. Aliquam eget viverra leo. Aenean eu lacus ac lectus mattis pellentesque et nec nulla.</string>
+    <string name="txt_standard_care">Aqui você vai encontrar os cuidados básicos padrões para qualquer animal</string>
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="sexoDoAnimal">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+    <string-array name="comportamento">
+        <item>Calmo</item>
+        <item>Brincalhão</item>
+        <item>Reservado</item>
+        <item>Arisco</item>
+    </string-array>
+    <string-array name="vacinado">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string-array name="castrado">
+        <item>Sim</item>
+        <item>Não</item>
+    </string-array>
+    <string name="txt_parceiros">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam dapibus, porta libero in, venenatis mi. Vestibulum sit amet purus urna.</string>
+</resources>

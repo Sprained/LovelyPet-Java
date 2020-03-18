@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:gravity="bottom"
+    android:padding="8dp"
+    android:theme="@style/ThemeOverlay.AppCompat"
+    android:background="@mipmap/fundomenu2">
+
+    <ImageView
+        android:id="@+id/user_profile_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@mipmap/ic_profile"/>
+
+    <TextView
+        android:id="@+id/user_name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Jonatas Almeida"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/user_email_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="jonatas_almeida@email.com"
+        android:textColor="#fff"/>
+
+</LinearLayout>

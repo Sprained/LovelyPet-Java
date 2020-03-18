@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bubbledev.lovelypet.lovelypet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".telas_principais.Perfil"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".card_desaparecidos.ActivityDesaparecidos"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".telas_principais.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".telas_principais.MainActivity"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".telas_principais.ActivityCadastro"
+            android:parentActivityName=".telas_principais.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".tutorial.ActivityTutorial"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".telas_principais.ActivityLogin"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoBar" />
+        <activity
+            android:name=".card_desaparecidos.ItemActivity"
+            android:parentActivityName=".card_desaparecidos.ActivityDesaparecidos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".eventos.ActivityEventos"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".eventos.ItemEventosActivity"
+            android:parentActivityName=".eventos.ActivityEventos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".sobre_a_equipe.MissaoActivity"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cat.ViewImageActivity"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cat.PopupCat"
+            android:parentActivityName=".cat.ViewImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".cat.CatDashboard"
+            android:parentActivityName=".cat.PopupCat"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dashboard.DesapDashboard"
+            android:parentActivityName=".card_desaparecidos.ActivityDesaparecidos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dicas.ActivityDicas"
+            android:parentActivityName=".dicas.ActivityDicas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- Dogs -->
+        <activity
+            android:name=".dog.ActivityDogs"
+            android:parentActivityName=".telas_principais.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dog.PopupActivity"
+            android:parentActivityName=".dog.ActivityDogs"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".dog.DogDashboard"
+            android:parentActivityName=".dog.PopupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

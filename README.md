@@ -15,12 +15,9 @@ E foi parado o desenvolvimento nessa versão, para poder refazer em ionic e node
 ------------
 
 #### Novos Repositórios
-- [Front-End App][app]
-[app]: https://github.com/Sprained/LovelyPet-Ionic
-- [Front-End Site][site]
-[site]: https://github.com/Sprained/LovelyPet-Site
-- [Back-End][back]
-[back]: https://github.com/Sprained/LovelyPet-BackEnd
+- [Front-End App](https://github.com/Sprained/LovelyPet-Ionic)
+- [Front-End Site](https://github.com/Sprained/LovelyPet-Site)
+- [Back-End](https://github.com/Sprained/LovelyPet-BackEnd)
 
 ------------
 
